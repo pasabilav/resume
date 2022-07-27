@@ -47,7 +47,7 @@ html,body {height: 100%}
     position: absolute;
     justify-content: center;
     height: 34px;
-    width: 3%;
+    width: 10%;
     top: 10%;
     right: 0;
 }
@@ -901,7 +901,7 @@ progress {
     .name {font-size: 32px}
     .email,.phone {
         font-size: 21px;
-        align-items: self-end;
+        align-items: center;
     }
     .paragraph-title {
         font-size: 36px;
