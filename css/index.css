@@ -163,6 +163,17 @@ html,body {height: 100%}
     justify-content: space-around;
     margin-top: 1%;
     margin-bottom: 2%;
+
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
+
+}
+.work-block a {
+    text-decoration: none;
 }
 .work {
     display: flex;
