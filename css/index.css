@@ -628,6 +628,10 @@ progress::-webkit-progress-value {
     .main {
         justify-content: center;
     }
+    .main-box {
+        display: flex;
+        position: relative;flex-direction: column;
+    }
     .title {
         align-items: center;
         position: relative;
