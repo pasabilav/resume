@@ -1,0 +1,60 @@
+body {background-color: rgba(210, 210, 152,0.5);}
+/*.header {background-color: #3c3c3c}*/
+.header {background-color: #d2ad76
+}
+.mail,.phone,.telegram {color: white}
+.name {color: black;}
+.about a {color: black;}
+.header-menu a {color: black}
+.header-menu a:hover {color: rgba(255,255,255,0.7);}
+.paragraph-title {color: rgba(217,77,201,1);}
+.title {
+    color: black;
+    background: rgba(190, 190, 190, 0.5);
+}
+.university-title {background: rgba(195, 195, 195, 0.2);}
+
+
+#telegram {background-image: url("../img/telegram_light.png");}
+#call {background-image: url("../img/phone_light.png");}
+#mail {background-image: url("../img/mail_light.png");}
+
+.work a {color: black}
+.work a:hover {color: rgba(217,77,201,1)}
+.job-title {color: black;}
+/*.job-text {color: rgba(255,255,255,1);}*/
+.university-1, .university-2 {color: black;}
+.university-position,.university-date,.university-stage {color: black;}
+.soft-list,.data-list {color: black}
+/*.block-3 {color: white;}*/
+.skill-text {color: rgba(0,0,0,1);}
+
+.change-theme[data-theme='dark']{display: block;}
+.change-theme[data-theme='light'] {display: none;}
+
+.change-theme {background-image: url("../img/moon.png");}
+.phone-image {background-image: url("../img/head_phone.png");}
+.mail-image {background-image: url("../img/head_mail.png");}
+
+.university-pic {background-image: url("../img/univer.png")}
+.image {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/copy_dark.png");
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.work-image {background-image: url("../img/link.png")}
+.job-admin {background-image: url("../img/work_admin.png");}
+.job-support {background-image: url("../img/work_support.png");}
+.job-sales {background-image: url("../img/work_sales.png");}
+.exp-html {background-image: url("../img/exp_html.png")}
+.exp-css {background-image: url("../img/exp_css.png")}
+.exp-js {background-image: url("../img/exp_js.png")}
+
+#job-adobe {background-image: url("../img/job_adobe.png");}
+@media (max-width: 480px) {
+    /*.header-menu {background-color: gray;}*/
+    .footer {background: honeydew}
+}

@@ -1,0 +1,69 @@
+html,body {background-color: black;}
+.header {background-color: gray}
+.name {color: white;}
+.about a {color: white;}
+.header-menu a {color: floralwhite}
+.header-menu a:hover {color: rgba(217,77,201,0.7);}
+.title {
+    color: antiquewhite;
+    background: rgba(150,150,150,0.1);
+}
+.university-title {background: rgba(195, 195, 195, 0.1);}
+
+.paragraph-title {color: rgba(217,77,201,0.7);}
+
+#telegram {background-image: url("../img/telegram.png");}
+#call {background-image: url("../img/phone.png");}
+#mail {background-image: url("../img/mail.png");}
+
+.work a {color: white}
+.progress-box {color: white}
+.job-title {color: antiquewhite;}
+.job-list {color: white;}
+.job-skill {color: white;}
+.university-title {color: antiquewhite;background: rgba(150,150,150,0.1);}
+.university-date,.university-stage {color: white;}
+.university-position {color: white}
+.skill-title {color: white;}
+.skill-block {color: white;}
+.soft-list,.data-list {color: white;}
+.skill-text {color: gray}
+
+.change-theme[data-theme='dark']{display: none;}
+.change-theme[data-theme='light'] {display: block;}
+
+
+.change-theme {background-image: url("../img/dark.png");}
+.image {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/copy_light.png");
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.work-image {background-image: url("../img/link_dark.png")}
+.job-admin {background-image: url("../img/work_admin_dark.png");}
+.job-support {background-image: url("../img/work_support_dark.png");}
+.job-sales {background-image: url("../img/work_sales_dark.png");}
+.exp-html {background-image: url("../img/exp_html_dark.png")}
+.exp-css {background-image: url("../img/exp_css.png")}
+.exp-js {background-image: url("../img/exp_js.png")}
+.university-pic {background-image: url("../img/univer_dark.png")}
+.phone-image {
+    background-image: url("../img/head_phone_dark.png");
+}
+.mail-image {
+    background-image: url("../img/head_mail_dark.png");
+}
+#job-adobe {
+    background-image: url("../img/job_adobe_dark.png");
+}
+#span-gs, #span-adobe, #span-office {
+    color: whitesmoke;
+}
+@media (max-width: 850px) {
+    .job-title {background-color: rgba(0,0,0,0)}
+}
+@media (max-width: 390px) {
+
+}
