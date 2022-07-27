@@ -386,7 +386,7 @@ progress {font-size: 20px}
     font-size: 18px;
 }
 li span {font-weight: 600;letter-spacing: 2px;}
-li meter {width: 100%;
+li meter {width: 80%;
     height: 20px;}
 
 .data-list {
@@ -394,8 +394,8 @@ li meter {width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-transform: uppercase;
-    line-height: 30px;
+    /*text-transform: uppercase;*/
+    line-height: 25px;
     letter-spacing: 2px;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -782,10 +782,14 @@ progress {
         font-size: 21px;
         font-weight: 500;
     }
-    .university-stage, .university-date {
-        font-size: 18px;
+    .university-date {
+        font-size: 14px;
+        opacity: 0.5;
         /* letter-spacing: 3px; */
         /* text-transform: uppercase; */
+    }
+    .university-stage {
+        font-size: 16px;
     }
     #university-2 {
         margin-bottom: 5%;
@@ -793,19 +797,17 @@ progress {
     .foot-university {
         width: 100%;
         justify-content: center;
-        gap: 10%;
-        height: 35px;
+        /*gap: 5%;*/
+        /*height: 35px;*/
         align-items: center;
-        background-color: rgba(50,0,10,0.7);
+        /*background-color: rgba(50,0,10,0.7);*/
     }
     #span-gs,#span-adobe,#span-office {
         background-color: rgba(76, 76, 76, 0.2);
     }
     .university-pic {
-        opacity: 0.5;
-        position: absolute;
-        width: 95px;
-        height: 84px;
+        display: none;
+        visibility: hidden;
     }
 
     @function strokeDashoffset($num) {
@@ -889,12 +891,17 @@ progress {
 
 @media (max-width: 440px) {
     .header {
-        height: 206px;
+        height: 145px;
     }
     .main {
-        top: 200px;
+        top: 150px;
         overflow-scrolling: touch;
         overflow-x: hidden;
+    }
+    .name {font-size: 32px}
+    .email,.phone {
+        font-size: 21px;
+        align-items: self-end;
     }
     .paragraph-title {
         font-size: 36px;
