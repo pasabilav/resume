@@ -725,7 +725,7 @@ progress::-webkit-progress-value {
         height: 300px;}
     #soft-skills {
         /*height: 250px;*/
-        /*overflow-y: scroll;*/
+        overflow-y: scroll;
     }
     #personal-data {
         height: 100%;
