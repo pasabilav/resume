@@ -650,12 +650,14 @@ progress {
     #menu-drop {display: none;visibility: hidden}
     .paragraph-title {letter-spacing: 20px;font-size: 48px}
     .work-block {
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         position: relative;
-        overflow-x: scroll;
+        overflow-y: scroll;
         gap: 15%;
         justify-content: start;
-        margin: 1% 5% 2% 4%;
+        /*margin: 1% 5% 2% 4%;*/
+        height: 150px;
     }
     .work-block::-webkit-scrollbar {
         width: 0;
@@ -901,6 +903,7 @@ progress {
     .email,.phone {
         font-size: 21px;
         align-items: baseline;
+        letter-spacing: 4px;
     }
     .paragraph-title {
         font-size: 36px;
