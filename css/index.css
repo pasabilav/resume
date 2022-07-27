@@ -650,13 +650,12 @@ progress {
     #menu-drop {display: none;visibility: hidden}
     .paragraph-title {letter-spacing: 20px;font-size: 48px}
     .work-block {
-        flex-direction: column;
+        flex-direction: row;
         position: relative;
-        overflow-y: scroll;
-        gap: 10%;
+        overflow-x: scroll;
+        gap: 15%;
         justify-content: start;
         margin: 1% 5% 2% 4%;
-        height: 300px;
     }
     .work-block::-webkit-scrollbar {
         width: 0;
