@@ -900,7 +900,7 @@ progress {
     .name {font-size: 32px}
     .email,.phone {
         font-size: 21px;
-        align-items: center;
+        align-items: baseline;
     }
     .paragraph-title {
         font-size: 36px;
