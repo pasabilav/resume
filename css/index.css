@@ -616,6 +616,10 @@ progress::-webkit-progress-value {
     }
     .photo {
         display: none;}
+    .block {
+        display: flex;
+        position: relative;
+    }
     .header-menu {
         bottom: 0;
         display: flex;
@@ -640,12 +644,13 @@ progress::-webkit-progress-value {
     #menu-drop {display: none;visibility: hidden}
     .paragraph-title {letter-spacing: 20px;font-size: 48px}
     .work-block {
-        /*flex-direction: column;*/
+        flex-direction: column;
         position: relative;
-        overflow-x: scroll;
+        overflow-y: scroll;
         gap: 10%;
-        justify-content: initial;
+        justify-content: start;
         margin: 1% 5% 2% 4%;
+        height: 300px;
     }
     .work-block::-webkit-scrollbar {
         width: 0;
@@ -687,9 +692,8 @@ progress::-webkit-progress-value {
         flex-direction: column;
         position: relative;
         display: flex;
-        height: 350px;
         align-items: center;
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
     }
     .work {
         margin: 0 0 3%;
