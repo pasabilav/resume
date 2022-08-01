@@ -61,6 +61,7 @@ html,body {background-color: black;}
 #span-gs, #span-adobe, #span-office {
     color: whitesmoke;
 }
+.work-block a {color: white}
 @media (max-width: 850px) {
     .job-title {background-color: rgba(0,0,0,0)}
 }

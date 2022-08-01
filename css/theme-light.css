@@ -1,6 +1,7 @@
-body {background-color: rgba(210, 210, 152,0.5);}
+/*body {background-color: rgba(200, 185, 144,0.8);}*/
+body {background-color: rgba(240,255,240,0.5);}
 /*.header {background-color: #3c3c3c}*/
-.header {background-color: #d2ad76
+.header {background-color: rgba(200, 185, 144,1);
 }
 .mail,.phone,.telegram {color: white}
 .name {color: black;}
@@ -54,7 +55,10 @@ body {background-color: rgba(210, 210, 152,0.5);}
 .exp-js {background-image: url("../img/exp_js.png")}
 
 #job-adobe {background-image: url("../img/job_adobe.png");}
+
+.work-block a {color: black}
+.footer {background-color: rgba(200, 185, 144,1)}
 @media (max-width: 480px) {
     /*.header-menu {background-color: gray;}*/
-    .footer {background: honeydew}
+    .footer {background-color: rgba(200, 185, 144,1)}
 }
