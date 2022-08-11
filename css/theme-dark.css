@@ -17,6 +17,7 @@ html,body {background-color: black;}
 #mail {background-image: url("../img/mail.png");}
 
 .work a {color: white}
+.progress-work-bar__svg-image {background-image: url("../img/link_dark.png")}
 .progress-box {color: white}
 .job-title {color: antiquewhite;}
 .job-list {color: white;}
@@ -24,15 +25,12 @@ html,body {background-color: black;}
 .university-title {color: antiquewhite;background: rgba(150,150,150,0.1);}
 .university-date,.university-stage {color: white;}
 .university-position {color: white}
-.skill-title {color: white;}
 .skill-block {color: white;}
 .soft-list,.data-list {color: white;}
 .skill-text {color: gray}
-
+.skill-title {color: white}
 .change-theme[data-theme='dark']{display: none;}
 .change-theme[data-theme='light'] {display: block;}
-
-
 .change-theme {background-image: url("../img/dark.png");}
 .image {
     width: 15px;
@@ -49,19 +47,26 @@ html,body {background-color: black;}
 .exp-css {background-image: url("../img/exp_css.png")}
 .exp-js {background-image: url("../img/exp_js.png")}
 .university-pic {background-image: url("../img/univer_dark.png")}
-.phone-image {
-    background-image: url("../img/head_phone_dark.png");
-}
-.mail-image {
-    background-image: url("../img/head_mail_dark.png");
-}
-#job-adobe {
-    background-image: url("../img/job_adobe_dark.png");
-}
-#span-gs, #span-adobe, #span-office {
-    color: whitesmoke;
-}
+.phone-image {background-image: url("../img/head_phone_dark.png");}
+.mail-image {background-image: url("../img/head_mail_dark.png");}
+#job-adobe {background-image: url("../img/job_adobe_dark.png");}
+#span-gs, #span-adobe, #span-office {color: whitesmoke;}
 .work-block a {color: white}
+.work-container {color: white}
+.work-block a:hover {color: rgba(217,77,201,0.5)}
+.progress-bg {background: rgba(255, 255, 255, 0.8);}
+/*.circular-progress:before {background-image: url("../img/link_dark.png");*/
+/*    background-color: black;}*/
+.circle-inner::before {
+    background-image: url("../img/link_dark.png");
+    background-size: 85% 85%;
+}
+.circle {
+    border: 9px rgb(255, 255, 255) double;
+}
+.job-skill-title {
+    color: white;
+}
 @media (max-width: 850px) {
     .job-title {background-color: rgba(0,0,0,0)}
 }

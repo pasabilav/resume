@@ -22,6 +22,7 @@ body {background-color: rgba(240,255,240,0.5);}
 
 .work a {color: black}
 .work a:hover {color: rgba(217,77,201,1)}
+.progress-work-bar__svg-image {background-image: url("../img/link.png")}
 .job-title {color: black;}
 /*.job-text {color: rgba(255,255,255,1);}*/
 .university-1, .university-2 {color: black;}
@@ -29,7 +30,7 @@ body {background-color: rgba(240,255,240,0.5);}
 .soft-list,.data-list {color: black}
 /*.block-3 {color: white;}*/
 .skill-text {color: rgba(0,0,0,1);}
-
+.skill-title {color: black}
 .change-theme[data-theme='dark']{display: block;}
 .change-theme[data-theme='light'] {display: none;}
 
@@ -46,7 +47,7 @@ body {background-color: rgba(240,255,240,0.5);}
     background-position: center center;
 }
 
-.work-image {background-image: url("../img/link.png")}
+/*.work-image {background-image: url("../img/link.png")}*/
 .job-admin {background-image: url("../img/work_admin.png");}
 .job-support {background-image: url("../img/work_support.png");}
 .job-sales {background-image: url("../img/work_sales.png");}
@@ -57,7 +58,20 @@ body {background-color: rgba(240,255,240,0.5);}
 #job-adobe {background-image: url("../img/job_adobe.png");}
 
 .work-block a {color: black}
+.work-block a:hover {color: rgba(217,77,201,1)}
 .footer {background-color: rgba(200, 185, 144,1)}
+.progress-bg {background: rgba(233, 233, 233, 0.5);}
+
+.circular-progress:before {background-image: url("../img/link.png");
+    background-color: rgba(240,255,240,1);}
+.circle-inner::before {
+    background-image: url("../img/link.png");
+    background-size: 85% 85%;
+}
+.circle {
+    border: 9px rgba(0,0,0,1) double;
+}
+
 @media (max-width: 480px) {
     /*.header-menu {background-color: gray;}*/
     .footer {background-color: rgba(200, 185, 144,1)}

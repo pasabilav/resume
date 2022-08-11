@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/progress.scss" type="text/css">
+    <link rel="stylesheet" href="css/progress.css" type="text/css">
+
+    <link rel="stylesheet" href="css/circles.css">
+
     <link rel="stylesheet" title="theme" href="#">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" sizes="54x54">
 </head>
@@ -16,24 +21,26 @@
     <div class="container">
         <div class="header-title">
 
-            <div class="photo"><img src="img/photo.jpg" alt="Avatar"></div>
+            <tag><div class="photo"><img src="img/photo.jpg" alt="Avatar"></div></tag>
 
             <div class="about">
                 <div class="contacts-theme">
                     <div class="theme">
-                        <div class="change-theme" data-theme="light"></div>
-                        <div class="change-theme" data-theme="dark"></div>
+                        <tag>
+                            <div class="change-theme" data-theme="light"></div>
+                            <div class="change-theme" data-theme="dark"></div>
+                        </tag>
                     </div>
                 </div>
 
                 <div class="name">Пособилов Богдан</div>
                 <div class="contacts">
                     <div class="phone">
-                        <div class="phone-image"></div>
+                        <tag><div class="phone-image"></div></tag>
                         <a class="phoneLink" href="tel:+380663372555" title="Позвонить" id="phone-number">0663372555</a>
                     </div>
                     <div class="email">
-                        <div class="mail-image"></div>
+                        <tag><div class="mail-image"></div></tag>
                         <a class="emailLink" href="mailto:boduka@tuta.io?subject=Работа" title="Почта" id="mail-name" target="_blank">boduka@tuta.io</a>
                     </div>
 
@@ -63,246 +70,296 @@
                     <div class="git">
                         <div class="title" id="project">GitHub Links</div>
 
-                        <div class="work-block">
-                            <a href="https://master-benz.com.ua" target="_blank" title="СТО">Service
-                                <div class="work-image"></div></a>
-                            <a href="https://boqpos.github.io/photographer/" target="_blank" title="Фотограф">Photo
-                                <div class="work-image"></div></a>
-                            <a href="https://boqpos.github.io/shop/" target="_blank" title="Онлайн магазин">Shop
-                                <div class="work-image"></div></a>
-                            <a href="https://boqpos.github.io/museum/" target="_blank" title="Музей">Museum
-                                <div class="work-image"></div></a>
-                        </div>
+                            <div class="work-block">
+                                <section class="circles">
+                                    <div class="circle" data-prog="100">
+                                        <svg>
+                                            <circle r="36" cx="125" cy="125" class="track"></circle>
+                                            <circle r="36" cx="125" cy="125" class="pragress"></circle>
+                                        </svg>
+                                        <div class="circle-inner"><h1 class="text"><a href="https://master-benz.com.ua" class="" target="_blank">Service</a></h1></div>
+                                    </div>
+
+                                    <div class="circle" data-prog="50">
+                                        <svg>
+                                            <circle r="36" cx="125" cy="125" class="track"></circle>
+                                            <circle r="36" cx="125" cy="125" class="pragress"></circle>
+                                        </svg>
+                                        <div class="circle-inner"><h1 class="text"><a href="https://boqpos.github.io/shop/" class="" target="_blank">Shop</a></h1></div>
+                                    </div>
+
+                                    <div class="circle" data-prog="30">
+                                        <svg>
+                                            <circle r="36" cx="125" cy="125" class="track"></circle>
+                                            <circle r="36" cx="125" cy="125" class="pragress"></circle>
+                                        </svg>
+                                        <div class="circle-inner"><h1 class="text"><a href="https://boqpos.github.io/museum/" class="" target="_blank">Museum</a></h1></div>
+                                    </div>
+
+                                    <div class="circle" data-prog="30">
+                                        <svg>
+                                            <circle r="36" cx="125" cy="125" class="track"></circle>
+                                            <circle r="36" cx="125" cy="125" class="pragress"></circle>
+                                        </svg>
+                                        <div class="circle-inner"><h1 class="text"><a href="https://boqpos.github.io/photographer/" class="" target="_blank">Photo</a></h1></div>
+                                    </div>
+                                </section>
+                            </div>
                     </div>
+
                     <div class="pro-skill">
                         <div class="title" id="works">Professional Skills</div>
 
-                        <div class="skill-contain">
-                            <div class="skill-box">
-                                <div class="calltainer">
-                                    <div class="progressbar">
-                                        <svg class="progressbar__svg">
-                                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
-                                        </svg>
-                                        <span class="progressbar__text shadow-html"><div class="exp-html"></div></span>
+                            <div class="skill-contain">
+                                <div class="skill-box">
+                                    <div class="calltainer">
+                                        <div class="progressbar">
+                                            <svg class="progressbar__svg">
+                                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
+                                            </svg>
+                                            <span class="progressbar__text shadow-html"><tag><div class="exp-html"></div></tag></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-title"><span class="progressbar_text shadow-html">Html</span></div>
+                                    <div class="skill-block">
+                                        <div class="skill-inbox">
+                                            <div class="skill-level">Уровень</div>
+                                            <div class="skill-number"><span>Jun</span></div>
+                                        </div>
+                                        <div class="skill-inbox">
+                                            <div class="skill-exp">Опыт</div>
+                                            <div class="skill-number"><span>1 Year</span></div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="skill-title"><span class="progressbar_text shadow-html">Html</span></div>
-                                <div class="skill-block">
-                                    <div class="skill-inbox">
-                                        <div class="skill-level">Уровень</div>
-                                        <div class="skill-number"><span>Jun</span></div>
+                                <div class="skill-box">
+                                    <div class="calltainer">
+                                        <div class="progressbar">
+                                            <svg class="progressbar__svg">
+                                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-js shadow-js"> </circle>
+                                            </svg>
+                                            <span class="progressbar__text shadow-js"><tag><div class="exp-js"></div></tag></span>
+                                        </div>
                                     </div>
-                                    <div class="skill-inbox">
-                                        <div class="skill-exp">Опыт</div>
-                                        <div class="skill-number"><span>1 Year</span></div>
+
+                                    <div class="skill-title"><span class="progressbar_text shadow-js">JavaScript</span></div>
+
+                                    <div class="skill-block">
+                                        <div class="skill-inbox">
+                                            <div class="skill-level">Уровень</div>
+                                            <div class="skill-number"><span>Basic</span></div>
+                                        </div>
+                                        <div class="skill-inbox">
+                                            <div class="skill-exp">Опыт</div>
+                                            <div class="skill-number"><span>0.5 Year</span></div>
+                                        </div>
                                     </div>
+                                </div>
+
+                                <div class="skill-box">
+                                    <div class="calltainer">
+                                        <div class="progressbar">
+                                            <svg class="progressbar__svg">
+                                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-css shadow-css"> </circle>
+                                            </svg>
+                                            <span class="progressbar__text shadow-css"><tag><div class="exp-css"></div></tag></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-title"><span class="progressbar_text shadow-css">CSS</span></div>
+
+                                    <div class="skill-block">
+                                        <div class="skill-inbox">
+                                            <div class="skill-level">Уровень</div>
+                                            <div class="skill-number"><span>Jun</span></div>
+                                        </div>
+                                        <div class="skill-inbox">
+                                            <div class="skill-exp">Опыт</div>
+                                            <div class="skill-number"><span>1 Year</span></div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
-                            <div class="skill-box">
-                                <div class="calltainer">
-                                    <div class="progressbar">
-                                        <svg class="progressbar__svg">
-                                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-js shadow-js"> </circle>
-                                        </svg>
-                                        <span class="progressbar__text shadow-js"><div class="exp-js"></div></span>
-                                    </div>
-                                </div>
-
-                                <div class="skill-title"><span class="progressbar_text shadow-js">JavaScript</span></div>
-
-                                <div class="skill-block">
-                                    <div class="skill-inbox">
-                                        <div class="skill-level">Уровень</div>
-                                        <div class="skill-number"><span>Basic</span></div>
-                                    </div>
-                                    <div class="skill-inbox">
-                                        <div class="skill-exp">Опыт</div>
-                                        <div class="skill-number"><span>0.5 Year</span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-box">
-                                <div class="calltainer">
-                                    <div class="progressbar">
-                                        <svg class="progressbar__svg">
-                                            <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-css shadow-css"> </circle>
-                                        </svg>
-                                        <span class="progressbar__text shadow-css"><div class="exp-css"></div></span>
-                                    </div>
-                                </div>
-
-                                <div class="skill-title"><span class="progressbar_text shadow-css">CSS</span></div>
-
-                                <div class="skill-block">
-                                    <div class="skill-inbox">
-                                        <div class="skill-level">Уровень</div>
-                                        <div class="skill-number"><span>Jun</span></div>
-                                    </div>
-                                    <div class="skill-inbox">
-                                        <div class="skill-exp">Опыт</div>
-                                        <div class="skill-number"><span>1 Year</span></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
             </div>
 <!--Experience-->
             <div class="main-box">
                 <div class="paragraph-title" id="experience">Job</div>
-
                 <div class="title">Experience</div>
 
-                <div class="job">
-                    <div class="work">
-                        <div class="job-title">
-<!--                            <div class="job-pic"><div class="job-admin"></div></div>-->
-                            <div class="job-title-text">Администратор сайта</div>
-                        </div>
-                        <div class="jobs">
-                            <span id="span-gs"><span class="text">2021 - 2022</span><br>1.5 year</span>
-                            <ul class="job-list">
-                                <li>Написание сайта</li>
-                                <li>SEO</li>
-                                <li>SMM</li>
-                            </ul>
-                            <div class="job-skill">
-                                <span>Навыки</span><br>
-                                <div class="job-span" id="job-gs"></div><br>
-                                Business, Disk, etc
-                            </div>
-                        </div>
-                    </div>
+                    <div class="job">
+                        <div class="work">
+                            <div class="job-title"><div class="job-title-text">Администратор сайта</div></div>
+                            <div class="jobs">
+                                <span id="span-gs"><span class="work-text">2021 - 2022</span></span>
+                                    <ul class="job-list">
+                                        <li>Написание сайта</li>
+                                        <li>SEO</li>
+                                        <li>SMM</li>
+                                    </ul>
 
-                    <div class="work">
-                        <div class="job-title">
-<!--                            <div class="job-pic"><div class="job-support"></div></div>-->
-                            <div class="job-title-text">Помощник управляющего</div>
-                        </div>
-                        <div class="jobs">
-                            <span id="span-adobe"><span class="text">2019 - 2021</span><br>2 year</span>
-                            <ul class="job-list">
-                                <li>Анализ рынка конкурентов</li>
-                                <li>Выполнение поручений</li>
-                                <li>Релиз продукции</li>
-                            </ul>
-                            <div class="job-skill">
-                                <span>Навыки</span><br>
-                                <div class="job-span" id="job-adobe"></div><br>
-                                PhotoShop & Illustrator
+                                <div class="job-skill-title">Навыки</div>
+                                    <div class="job-skill">
+                                        <tag><div class="job-span" id="job-gs"></div></tag><br>
+                                        Business, Disk, etc
+                                    </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="work">
-                        <div class="job-title">
-<!--                            <div class="job-pic"><div class="job-sales"></div></div>-->
-                            <div class="job-title-text">Менеджер по продажам</div>
+                        <div class="work">
+                            <div class="job-title"><div class="job-title-text">Помощник управляющего</div></div>
+                            <div class="jobs">
+                                <span id="span-adobe"><span class="work-text">2019 - 2021</span></span>
+                                    <ul class="job-list">
+                                        <li>Анализ рынка конкурентов</li>
+                                        <li>Выполнение поручений</li>
+                                        <li>Релиз продукции</li>
+                                    </ul>
+
+                                <div class="job-skill-title">Навыки</div>
+                                    <div class="job-skill">
+                                        <tag><div class="job-span" id="job-adobe"></div></tag><br>
+                                        PhotoShop & Illustrator
+                                    </div>
+                            </div>
                         </div>
-                        <div class="jobs">
-                            <span id="span-office"><span class="text">2018 - 2019</span><br>1 year</span>
-                            <ul class="job-list">
-                                <li>Входящие & исходящие звонки</li>
-                                <li>Привлечение клиентов</li>
-                            </ul>
-                            <div class="job-skill">
-                                <span>Навыки</span><br>
-                                <div class="job-span" id="job-office"></div><br>
-                                Excel, Word, Outlook
+
+                        <div class="work">
+                            <div class="job-title"><div class="job-title-text">Менеджер по продажам</div></div>
+                            <div class="jobs">
+                                <span id="span-office"><span class="work-text">2018 - 2019</span></span>
+                                    <ul class="job-list">
+                                        <li>Входящие & исходящие звонки</li>
+                                        <li>Привлечение клиентов</li>
+                                    </ul>
+
+                                <div class="job-skill-title">Навыки</div>
+                                    <div class="job-skill">
+                                        <tag><div class="job-span" id="job-office"></div></tag><br>
+                                        Excel, Word, Outlook
+                                    </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
 <!--Details-->
             <div class="main-box">
                 <div class="paragraph-title" id="about-me">Details</div>
-<!--                <div class="details" id="soft-skills">-->
                     <div class="title">Soft Skills</div>
-                    <div class="block">
-                        <ul class="soft-list">
+                        <div class="block">
+                            <div class="soft-list">
 
-                            <li><span>Английский</span>
-                                    <meter value="75" min="0" max="100"></meter><br>
-                                Upper-Intermediate
-                            </li><br>
+                                <div class="soft-list-menu">
+                                    <div class="soft-list-title">Язык</div>
 
+                                    <div class="soft-list-name">Английский</div>
+                                    <div class="progress">
+                                        <progress max="100" value="65" class="prog-con"></progress>
+                                            <div class="progress-bg"><div class="progress-bar"></div></div>
+                                    </div>
+                                    <span class="progress-span">Upper-Intermediate</span>
+                                </div>
 
-                            <li>
-                                <span>Мышление</span><br>
-                                Аналитическое
-                                    <meter value="95" min="0" max="100"></meter>
-                                <br>
-                                Адаптивное
-                                    <meter value="100" min="0" max="100"></meter>
-                                <br>
-                            </li><br>
+                                <div class="soft-list-menu">
+                                    <div class="soft-list-title">Мышление</div>
 
-                            <li>
-                                <span>Стрессоустойчивость</span><br>
-                                Сдержанность
-                                <meter value="95" min="0" max="100"></meter>
-                            </li><br>
+                                    <div class="soft-list-name">Аналитическое</div>
+                                        <div class="progress">
+                                            <progress max="100" value="70" class="prog-con"></progress>
+                                                <div class="progress-bg"><div class="progress-bar" id="analytic"></div></div>
+                                        </div>
 
-                            <li>
-                                <span>Мотивация</span><br>
-                                Обучаемость<meter value="90" min="0" max="100"></meter><br>
-                                Результативность<meter value="90" min="0" max="100"></meter>
-                            </li>
-                        </ul>
-                    </div>
-<!--                </div>-->
+                                    <div class="soft-list-name">Адаптивное</div>
+                                        <div class="progress">
+                                            <progress max="100" value="85"></progress>
+                                                <div class="progress-bg"><div class="progress-bar" id="adaptive"></div></div>
+                                        </div>
+                                </div>
+
+                                <div class="soft-list-menu">
+                                    <div class="soft-list-title">Эмоции</div>
+
+                                    <div class="soft-list-name">Стрессоустойчивость</div>
+                                        <div class="progress">
+                                            <progress max="100" value="90"></progress>
+                                                <div class="progress-bg"><div class="progress-bar" id="stress"></div></div>
+                                        </div>
+
+                                    <div class="soft-list-name">Сдержанность</div>
+                                        <div class="progress">
+                                            <progress max="100" value="100"></progress>
+                                                <div class="progress-bg"><div class="progress-bar" id="sderzhanost"></div></div>
+                                        </div>
+                                </div>
+
+                                <div class="soft-list-menu">
+                                    <div class="soft-list-title">Мотивация</div>
+
+                                    <div class="soft-list-name">Обучаемость</div>
+                                        <div class="progress">
+                                            <progress max="100" value="78"></progress>
+                                                <div class="progress-bg"><div class="progress-bar" id="education"></div></div>
+                                        </div>
+
+                                    <div class="soft-list-name">Результативность</div>
+                                        <div class="progress">
+                                            <progress max="100" value="84"></progress>
+                                                <div class="progress-bg"><div class="progress-bar" id="result"></div></div>
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                 <div class="details">
                     <div class="title">Personal</div>
-                    <div class="block">
-                        <ul class="data-list">
-                            <li>Желание быть полезным</li>
-                            <li>Ответственный подход к работе</li>
-                            <li>Готов к большому объему работы</li>
-                            <li>Ориентирован на достижение целей</li>
-                            <li>Внимателен к деталям и требованиям</li>
-                        </ul>
+                        <div class="block">
+                            <ul class="data-list">
+                                <li>Желание быть полезным</li>
+                                <li>Ответственный подход к работе</li>
+                                <li>Готов к большому объему работы</li>
+                                <li>Ориентирован на достижение целей</li>
+                                <li>Внимателен к деталям и требованиям</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 <!--Education-->
             <div class="main-box">
                 <div class="title">Education</div>
+                    <div class="education">
 
-                <div class="education">
-                    <div class="university">
-                        <div class="university-title">УИПА</div>
-                        <div class="university-1">
-                            <div class="university-stage">Магистр</div>
-                            <div class="university-position">Автоматизация и приборостроение</div>
-                            <div class="university-pic"></div>
-                            <div class="foot-university">
-                                <div class="university-date">2018-2019</div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="university">
-                        <div class="university-title">КНТЕУ</div>
-                        <div class="university-1" id="university-2">
-                            <div class="university-stage">Бакалавр</div>
-                            <div class="university-position">Компьютерные науки</div>
-                            <div class="university-pic"></div>
-                            <div class="foot-university">
-                                <div class="university-date">2013-2017</div>
+                        <div class="university">
+                            <div class="university-title">УИПА</div>
+                                <div class="university-1">
+                                    <div class="university-stage">Магистр</div>
+                                        <div class="university-position">Автоматизация и приборостроение</div>
+<!--                                            <tag><div class="university-pic"></div></tag>-->
+                                        <div class="foot-university">
+                                    <div class="university-date">2018-2019</div>
+                                </div>
                             </div>
                         </div>
+
+                        <tag><div class="university-pic"></div></tag>
+
+                        <div class="university">
+                            <div class="university-title">КНТЕУ</div>
+                                <div class="university-1" id="university-2">
+                                    <div class="university-stage">Бакалавр</div>
+                                        <div class="university-position">Компьютерные науки</div>
+<!--                                            <tag><div class="university-pic"></div></tag>-->
+                                        <div class="foot-university">
+                                    <div class="university-date">2013-2017</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-<!---->
-            </div>
 
         </div>
     </div>
@@ -311,13 +368,16 @@
 <footer class="footer">
     <div class="footer-container">
         <ul class="footer-contact">
-            <li><a href="https://t.me/pasabilav" class="tg" target="_blank"><div id="telegram"></div></a></li>
-            <li><a href="tel:+380663372555" class="call"><div id="call"></div></a></li>
-            <li><a href="mailto:boduka@tuta.io?subject=Работа" class="mail" target="_blank"><div id="mail"></div></a></li>
+            <li><tag><a href="https://t.me/pasabilav" class="tg" target="_blank"><div id="telegram"></div></a></tag></li>
+            <li><tag><a href="tel:+380663372555" class="call"><div id="call"></div></a></tag></li>
+            <li><tag><a href="mailto:boduka@tuta.io?subject=Работа" class="mail" target="_blank"><div id="mail"></div></a></tag></li>
         </ul>
     </div>
 </footer>
 
+<script src="copies.js"></script>
 <script src="theme.js"></script>
+<script src="progress.js"></script>
+<script src="scr.js"></script>
 </body>
 </html>

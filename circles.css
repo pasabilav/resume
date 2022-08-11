@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
+@font-face {font-family: 'Darker Grotesque', sans-serif;}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.circle {
+    margin: 5em;
+    /*background: #2d3239;*/
+    border: 9px rgba(0,0,0,0.5) double;
+    border-radius: 50%;
+    position: relative;
+    width: 6em;
+    height: 6em;
+    /*color: #fff;*/
+    /*box-shadow: 0 0 0.2em rgba(0, 0, 0, 1);*/
+}
+.circle-inner {
+    background: transparent;
+    border-radius: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10em;
+    height: 10em;
+    /*box-shadow: 0 1em 0 rgba(255, 0, 0, 1);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-inner::before {
+    content: '';
+    /*background: linear-gradient(120deg,#201c21,#2f343a);*/
+    background-color: transparent;
+    background-image: url("img/link.png");
+    background-size: 100% 100%;
+    background-position: center;
+    /*box-shadow: 0 0 0.2em 0.2em rgba(0, 0, 0, 0.3);*/
+    /*box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.7);*/
+    border-radius: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5em;
+    height: 5em;
+    z-index: -3;
+}
+.text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    z-index: 10;
+    width: 150px;
+    padding-top: 100%;
+}
+.text a {
+    text-decoration: none;
+}
+.circle svg {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.track {
+    fill: none;
+}
+.pragress {
+    fill: none;
+    stroke: #1cff3e;
+    stroke-width: 8;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    transition: 2s ease-in-out;
+}
+
+.circle:nth-child(2) .pragress {
+    stroke: #ffb71c;
+}
+.circle:nth-child(3) .pragress {
+    stroke: rgba(255, 43, 28,0.8);
+}
+.circle:nth-child(4) .pragress {
+    stroke: rgba(255, 43, 28,0.8);
+}
+.shadow-1 {
+    /*filter: drop-shadow(2px 0 5px #1db51a);*/
+}
+.shadow-2 {
+    /*filter: drop-shadow(2px 0 5px #7c1616);*/
+}
+.shadow-3 {
+    /*filter: drop-shadow(2px 0 5px #ffb71c);*/
+}
+
