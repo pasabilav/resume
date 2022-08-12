@@ -75,5 +75,14 @@ body {background-color: rgba(133, 162, 199, 0.3)}
 .text {color: black}
 @media (max-width: 480px) {
     /*.header-menu {background-color: gray;}*/
-    .footer {background-color: rgba(200, 185, 144,1)}
+    .footer {background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 30px 30px 10px 10px}
+    .header {
+        backdrop-filter: blur(4px);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .soft-list-title {
+        background-color: rgba(128, 128, 128,0.2);
+    }
 }

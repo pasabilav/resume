@@ -665,3 +665,17 @@
   justify-content: center;
 }
 /*# sourceMappingURL=progress.css.map */
+@media (max-width: 860px) {
+  .progress-bar{
+    background: rgb(71 114 30);
+  }
+  .progress {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .progress-bg{
+    height: 25px;
+    border-radius: 30px;
+  }
+
+}

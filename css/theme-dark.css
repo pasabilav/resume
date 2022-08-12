@@ -1,5 +1,5 @@
 html,body {background-color: black;}
-.header {background-color: gray}
+.header {background-color: #808080}
 .name {color: white;}
 .about a {color: white;}
 .header-menu a {color: floralwhite}
@@ -70,7 +70,27 @@ html,body {background-color: black;}
 }
 .text {color: white}
 @media (max-width: 850px) {
+    #span-gs,#span-adobe,#span-office {
+        color: rgba(128,128,128,0.6);
+        font-size: 14px;
+    }
     .job-title {background-color: rgba(0,0,0,0)}
+    .footer {background-color: rgba(128, 128, 128, 0.6);
+        backdrop-filter: blur(2px);
+        border-radius: 30px 30px 10px 10px}
+    .header {
+        backdrop-filter: blur(4px);
+        background-color: rgba(128, 128, 128, 0.8);
+    }
+    .progress-bg {
+        background: rgba(255, 255, 255, 1);
+    }
+    .university-date,.university-stage {
+        color: rgba(128, 128, 128, 0.8);
+    }
+    .soft-list-title {
+        background-color: rgba(128, 128, 128,0.2);
+    }
 }
 @media (max-width: 390px) {
 
