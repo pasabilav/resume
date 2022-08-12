@@ -1,5 +1,5 @@
 html,body {background-color: black;}
-.header {background-color: #808080}
+.header {background-color: rgba(128,128,128,0.7);}
 .name {color: white;}
 .about a {color: white;}
 .header-menu a {color: floralwhite}
@@ -55,7 +55,7 @@ html,body {background-color: black;}
 .work-block a {color: white}
 .work-container {color: white}
 .work-block a:hover {color: rgba(217,77,201,0.5)}
-.progress-bg {background: rgba(255, 255, 255, 0.8);}
+.progress-bg {background: rgba(255, 255, 255, 0.5);border: 1px solid rgba(255,255,255,0.5)}
 /*.circular-progress:before {background-image: url("../img/link_dark.png");*/
 /*    background-color: black;}*/
 .circle-inner::before {

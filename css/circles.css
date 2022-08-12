@@ -6,18 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     text-align: center;
 }
 .circle {
-    margin: 5em;
-    /*background: #2d3239;*/
+    margin: 1% 5% 5%;
+    /* background: #2d3239; */
     border-radius: 50%;
     position: relative;
-    width: 6em;
-    height: 6em;
-    /*color: #fff;*/
-    /*box-shadow: 0 0 0.2em rgba(0, 0, 0, 1);*/
+    width: 100%;
+    height: 100px;
 }
 .circle-inner {
     background: transparent;
@@ -54,12 +52,16 @@
 .text {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     z-index: 10;
-    width: 150px;
-    padding-top: 80%;
+    margin-top: 80%;
+    opacity: 0.3;
+}
+.text:hover {
+    opacity: 1;
+    transition: 1s ease-out;
 }
 .text a {text-decoration: none;}
 .circle svg {

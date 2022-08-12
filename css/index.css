@@ -22,6 +22,7 @@ html,body {height: 100%}
     height: 170px;
     width: 100%;
     z-index: 10;
+    backdrop-filter: blur(4px);
 }
 .container {
     max-width: 1180px;
@@ -140,17 +141,18 @@ html,body {height: 100%}
 .paragraph-title {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 42px;
-    letter-spacing: 50px;
+    letter-spacing: 35px;
     text-align: center;
     text-transform: uppercase;
+    opacity: 0.6;
 }
 .git {
     display: flex;
     flex-direction: column;
     position: relative;
-    letter-spacing: 0;
-    text-align: center;
-    justify-content: space-around;
+    /*letter-spacing: 0;*/
+    /*text-align: center;*/
+    /*justify-content: space-around;*/
 }
 .title {
     font-family: 'Darker Grotesque', sans-serif;
@@ -216,8 +218,8 @@ html,body {height: 100%}
     justify-content: center;
     align-items: center;
     background-color: rgba(128,128,128,0.3);
-    border-radius: 25px 25px 0 0;
-    font-size: 21px;
+    border-radius: 30px 30px 0 0;
+    font-size: 24px;
     font-weight: 600;
     position: relative;
     margin-bottom: 2%;
@@ -225,7 +227,7 @@ html,body {height: 100%}
     height: 50px;
     font-family: 'Yanone',sans-serif;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
 }
 
 .skill-block {
@@ -239,7 +241,7 @@ html,body {height: 100%}
     width: 100%;
     line-height: 25px;
     background: rgba(128,128,128,0.1);
-    border-radius: 25px 25px 0 0;
+    border-radius: 30px 30px 30px 30px;
     padding-bottom: 5%;
 }
 .skill-block span {
@@ -279,6 +281,8 @@ progress {font-size: 20px}
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: rgba(128,128,128,0.1);
+    border-radius: 25px;
 }
 .job-title {
     text-align: center;
@@ -299,7 +303,7 @@ progress {font-size: 20px}
 
 .job-title-text {
     font-family: 'Yanone', sans-serif;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 600;
     letter-spacing: 5px;
     background-color: rgba(128,128,128,0.3);
@@ -308,7 +312,7 @@ progress {font-size: 20px}
 .jobs {
     font-family: 'Yanone',sans-serif;
     font-size: 20px;
-    margin: 1% 0 0;
+    /*margin: 1% 0 0;*/
     display: flex;
     flex-direction: column;
     position: relative;
@@ -317,30 +321,35 @@ progress {font-size: 20px}
     align-items: center;
 }
 .job-list {
-    text-transform: uppercase;
+    text-transform: none;
     margin-top: 1%;
     list-style: none;
-    line-height: 30px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-size: 21px;
+    width: 100%;
 }
 .job-skill {
     list-style: none;
-    text-transform: uppercase;
-    padding-top: 5%;
+    text-transform: none;
+    padding-top: 3%;
     line-height: 25px;
     bottom: 0;
-    background-color: rgba(128,128,128,0.1);
+    /*background-color: rgba(128,128,128,0.1);*/
     width: 100%;
     height: 100%;
     padding-bottom: 5%;
     border-radius: 0 0 30px 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .job-skill-title {
     margin-top: 3%;
     font-weight: 600;
-    background-color: rgba(128,128,128,0.2);
+    background-color: rgba(128,128,128,0.3);
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 10px;
     width: 100%;
 }
 
@@ -357,9 +366,9 @@ progress {font-size: 20px}
 }
 .work-text {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
 }
 #job-gs {
     background-image: url("../img/job_gs.png");
@@ -381,7 +390,7 @@ progress {font-size: 20px}
     flex-direction: column;
     position: relative;
     font-family: 'Yanone',sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     overflow: scroll;
 }
@@ -403,18 +412,28 @@ progress {font-size: 20px}
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    width: 100%;
+    background-color: rgba(128,128,128,0.1);
+    border-radius: 25px;
+    padding-bottom: 2%;
+    line-height: 40px;
 }
 .soft-list-title {
     display: flex;
     justify-content: center;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    background-color: rgba(128,128,128,0.3);
+    border-radius: 30px 30px 0 0;;
+    line-height: 40px;
 }
 .soft-list-name {
     display: flex;
     flex-direction: column;
     /*justify-content: center;*/
     text-align: center;
+    text-transform: none;
+    letter-spacing: 2px;
 }
 .soft-list-name meter {
     width: 80%;
@@ -436,28 +455,32 @@ progress {font-size: 20px}
     align-items: center;
     line-height: 25px;
     letter-spacing: 2px;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    /*margin-top: 1%;*/
+    /*margin-bottom: 2%;*/
 }
 /*Education*/
-.education {display: flex;gap: 3%}
+.education {display: flex;gap: 3%;}
 .university {
-    /*margin: 0 0 2% 0;*/
+    margin: 1% 0 2% 0;
     display: flex;
     flex-direction: column;
     position: relative;
     max-width: 100%;
     width: 50%;
+    background-color: rgba(128,128,128,0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(1px);
 }
 .university-title {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 36px;
     font-weight: 600;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
     text-align: center;
     align-items: center;
     text-transform: uppercase;
-    border-radius: 0 0 50px 50px;
+    border-radius: 30px 30px 0 0;
+    background-color: rgba(128,128,128,0.3);
 }
 .university-1 {
     list-style: none;
@@ -481,7 +504,9 @@ progress {font-size: 20px}
     display: flex;
     height: 130px;
     width: 190px;
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, 20%);
+    opacity: 0.1;
+    filter: blur(1px)
 }
 .foot-university {
     display: flex;
@@ -491,12 +516,15 @@ progress {font-size: 20px}
     width: 50%;
 }
 .university-stage,.university-date {
-    font-size: 16px;
-    letter-spacing: 3px;
+    font-size: 18px;
+    letter-spacing: 6px;
     text-transform: uppercase;
+    opacity: 0.3;
 }
+
 .university-date {
-    font-family: 'Quattrocento Sans',sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
+    /*font-family: 'Quattrocento Sans',sans-serif;*/
 }
 /*Footer*/
 .footer {
@@ -812,7 +840,14 @@ progress {
     display: flex;
     position: relative;flex-direction: column;
 }
-
+.skill-level,.skill-exp {
+    color: rgba(128,128,128,0.6);
+}
+.skill-block span {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
 @media (max-width: 850px) {
     body {
         overflow-x: hidden;

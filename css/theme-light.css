@@ -1,7 +1,7 @@
 /*body {background-color: rgba(200, 185, 144,0.8);}*/
 body {background-color: rgba(133, 162, 199, 0.3)}
 /*.header {background-color: rgba(200, 185, 144,1);*/
-.header {background-color: rgba(255, 255, 255, 1)}
+.header {background-color: rgba(255, 255, 255, 0.7)}
 .mail,.phone,.telegram {color: white}
 .name {color: black;}
 .about a {color: black;}
@@ -59,7 +59,7 @@ body {background-color: rgba(133, 162, 199, 0.3)}
 .work-block a {color: black}
 .work-block a:hover {color: rgba(217,77,201,1)}
 .footer {background-color: rgba(200, 185, 144,1)}
-.progress-bg {background: rgba(233, 233, 233, 0.5);}
+.progress-bg {background: rgba(255, 255, 255, 0.5);border: 1px solid rgba(0,0,0,0.5)}
 
 /*.circular-progress:before {*/
 /*    background-image: url("../img/link.png");*/
