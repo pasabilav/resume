@@ -106,6 +106,9 @@ html,body {height: 100%}
     justify-content: space-around;
     text-decoration: none;
 }
+.header-menu a:hover {
+    transition: 0.4s ease-out;
+}
 .menu {
     display: flex;
     justify-content: space-between;
@@ -137,7 +140,7 @@ html,body {height: 100%}
 .paragraph-title {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 42px;
-    letter-spacing: 7px;
+    letter-spacing: 50px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -152,55 +155,15 @@ html,body {height: 100%}
 .title {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 36px;
-    letter-spacing: 6px;
+    font-weight: 600;
+    letter-spacing: 10px;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 1%;
+    /*border-radius: 5px 5px 30px 30px;*/
 }
 .title span {font-weight: 600;}
-.work-block {
-    /*display: flex;*/
-    /*justify-content: space-around;*/
-    /*margin: 1% 5% 2% 5%;*/
 
-    /*font-family: 'Darker Grotesque', sans-serif;*/
-    /*font-size: 26px;*/
-    /*text-decoration: none;*/
-    /*text-transform: uppercase;*/
-    /*letter-spacing: 5px;*/
-    /*font-weight: 600;*/
-    /*line-height: 40px;*/
-
-    /*height: 150px;*/
-    /*align-items: center;*/
-    /*gap: 3%;*/
-
-    /*display: flex;*/
-    /*justify-content: space-around;*/
-    /*margin: 1% 5% 2% 5%;*/
-    /*font-family: 'Darker Grotesque', sans-serif;*/
-    /*font-size: 26px;*/
-    /*text-decoration: none;*/
-    /*text-transform: uppercase;*/
-    /*letter-spacing: 5px;*/
-    /*font-weight: 600;*/
-    /*line-height: 60px;*/
-    /*gap: 5%;*/
-    /*height: 150px;*/
-    /*align-items: center;*/
-    /*overflow: auto;*/
-}
-.work-block a {
-    margin: 1% 0 2%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    text-decoration: none;
-    font-weight: 600;
-}
-.work-block a:hover {
-    transition: ease-out 1s;
-}
 .work {
     display: flex;
     flex-direction: column;
@@ -243,8 +206,8 @@ html,body {height: 100%}
     line-height: 40px;
 }
 .exp-js,.exp-css,.exp-html {
-    width: 112px;
-    height: 118px;
+    width: 102px;
+    height: 108px;
     background-size: 100% 100%;
     background-position: center center;
 }
@@ -252,8 +215,8 @@ html,body {height: 100%}
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128,128,128,0.1);
-    border-radius: 25px;
+    background-color: rgba(128,128,128,0.3);
+    border-radius: 25px 25px 0 0;
     font-size: 21px;
     font-weight: 600;
     position: relative;
@@ -275,6 +238,9 @@ html,body {height: 100%}
     letter-spacing: 3px;
     width: 100%;
     line-height: 25px;
+    background: rgba(128,128,128,0.1);
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 5%;
 }
 .skill-block span {
     font-family: 'Darker Grotesque', sans-serif;
@@ -319,9 +285,7 @@ progress {font-size: 20px}
     text-transform: uppercase;
     justify-content: space-between;
 }
-.job-pic {
-    display: flex;position: relative;height: 80px;align-items: center;
-}
+.job-pic {display: flex;position: relative;height: 80px;align-items: center;}
 
 .job-admin,.job-support,.job-sales {
     position: relative;
@@ -338,7 +302,8 @@ progress {font-size: 20px}
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 5px;
-    background-color: rgba(128,128,128,0.5);
+    background-color: rgba(128,128,128,0.3);
+    border-radius: 30px 30px 0 0;
 }
 .jobs {
     font-family: 'Yanone',sans-serif;
@@ -360,20 +325,22 @@ progress {font-size: 20px}
 .job-skill {
     list-style: none;
     text-transform: uppercase;
-    margin-top: 3%;
+    padding-top: 5%;
     line-height: 25px;
     bottom: 0;
+    background-color: rgba(128,128,128,0.1);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    border-radius: 0 0 30px 30px;
 }
-/*.job-skill span {*/
-/*    font-weight: 600;*/
-/*    !*background-color: rgba(128,128,128,0.5);*!*/
-/*    letter-spacing: 6px;*/
-/*}*/
+
 .job-skill-title {
+    margin-top: 3%;
     font-weight: 600;
     background-color: rgba(128,128,128,0.2);
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     width: 100%;
 }
 
@@ -384,8 +351,9 @@ progress {font-size: 20px}
 }
 #span-gs,#span-adobe,#span-office {
     line-height: 25px;
-    background-color: rgba(128,128,128,0.3);
+    background-color: rgba(128,128,128,0.1);
     width: 100%;
+    text-align: center;
 }
 .work-text {
     font-family: 'Darker Grotesque', sans-serif;
@@ -472,7 +440,7 @@ progress {font-size: 20px}
     margin-bottom: 2%;
 }
 /*Education*/
-.education {display: flex;}
+.education {display: flex;gap: 3%}
 .university {
     /*margin: 0 0 2% 0;*/
     display: flex;
@@ -485,10 +453,11 @@ progress {font-size: 20px}
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 36px;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
     text-align: center;
     align-items: center;
     text-transform: uppercase;
+    border-radius: 10px 0 50px 50px;
 }
 .university-1 {
     list-style: none;
@@ -599,14 +568,36 @@ progress {font-size: 20px}
     width: 100%;
     height: 100%;
 }
-.progressbar__svg-circle {
+.progressbar__svg-circle-html {
     width: 100%;
     height: 100%;
     fill: none;
-    stroke-width: 5;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
-    stroke: rgba(255,255,255,1);
+    stroke-width: 7;
+    stroke: rgba(154, 250, 118,0.8);
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+.progressbar__svg-circle-js {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-width: 7;
+    stroke: rgba(239, 122, 43,0.8);
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+.progressbar__svg-circle-css {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-width: 7;
+    stroke: rgba(137, 219, 106, 0.8);
     stroke-linecap: round;
     transform: translate(5px, 5px);
 }
@@ -636,37 +627,27 @@ progress {font-size: 20px}
 /*    transform: translate(-50%, -50%) rotate(0deg);*/
 /*}*/
 
-.shadow-html {
-    filter: drop-shadow(1px 0 5px #66e063);
-}
-.shadow-css {
-    filter: drop-shadow(2px 0 5px #1db51a);
-}
-.shadow-js {
-    filter: drop-shadow(3px 5px 5px #7c1616);
-}
+.shadow-html {filter: drop-shadow(1px 0 5px #66e063)}
+.shadow-css {filter: drop-shadow(2px 0 5px #1db51a)}
+.shadow-js {filter: drop-shadow(1px 5px 5px #7c1616)}
+.shadow-work {filter: drop-shadow(2px 0 5px #1db51a)}
+
 .circle-js {
-    -webkit-animation: anim_circle-js 1s ease-in-out forwards;
-    animation: anim_circle-js 1s ease-in-out forwards;
+    -webkit-animation: anim_circle-js 2s ease-in-out forwards;
+    animation: anim_circle-js 2s ease-in-out forwards;
 }
 .circle-css {
-    -webkit-animation: anim_circle-css 1s ease-in-out forwards;
-    animation: anim_circle-css 1s ease-in-out forwards;
+    -webkit-animation: anim_circle-css 2s ease-in-out forwards;
+    animation: anim_circle-css 2s ease-in-out forwards;
 }
 .circle-html {
-    -webkit-animation: anim_circle-html 1s ease-in-out forwards;
-    animation: anim_circle-html 1s ease-in-out forwards;
+    -webkit-animation: anim_circle-html 2s ease-in-out forwards;
+    animation: anim_circle-html 2s ease-in-out forwards;
 }
 .circle-work {
     -webkit-animation: anim_circle-work 2s ease-in-out forwards;
     animation: anim_circle-work 2s ease-in-out forwards;
 }
-.shadow-work {filter: drop-shadow(2px 0 5px #1db51a);}
-.meter-work-1 {
-    -webkit-animation: anim_meter-work-1 2s ease-in-out forwards;
-    animation: anim_meter-work-1 2s ease-in-out forwards;
-}
-.shadow-work-1 {filter: drop-shadow(2px 0 5px #1db51a);}
 .circle-work-1 {
     -webkit-animation: anim_circle-work 2s ease-in-out forwards;
     animation: anim_circle-work 2s ease-in-out forwards;
@@ -675,10 +656,20 @@ progress {font-size: 20px}
     -webkit-animation: anim_circle-work 2s ease-in-out forwards;
     animation: anim_circle-work 2s ease-in-out forwards;
 }
-.shadow-work-2 {filter: drop-shadow(1px 2px 5px #31b813);}
-.shadow-work-3 {filter: drop-shadow(1px 2px 5px #b50101);}
-.shadow-work-4 {filter: drop-shadow(1px 2px 5px #b50101);}
 
+.meter-work-1 {
+    -webkit-animation: anim_meter-work-1 2s ease-in-out forwards;
+    animation: anim_meter-work-1 2s ease-in-out forwards;
+}
+.shadow-work-1 {filter: drop-shadow(2px 0 5px #1db51a)}
+.shadow-work-2 {filter: drop-shadow(1px 2px 5px #31b813)}
+.shadow-work-3 {filter: drop-shadow(1px 2px 5px #b50101)}
+.shadow-work-4 {filter: drop-shadow(1px 2px 5px #ffb71c)}
+
+.shadow-service {box-shadow: 0 1px 5px 2px #1db51a;}
+.shadow-shop {box-shadow: 0 1px 5px 2px #ffb71c;}
+.shadow-museum {box-shadow: 0 1px 5px 2px rgba(255, 43, 28,0.8);}
+.shadow-photo {box-shadow: 0 1px 5px 2px rgba(255, 43, 28,0.8);}
 .work-progressbar__svg {
     position: relative;
     display: flex;
@@ -1138,8 +1129,8 @@ progress {
         opacity: 0.8;
     }
     .exp-js, .exp-css, .exp-html {
-        width: 100px;
-        height: 94px;
+        width: 90px;
+        height: 80px;
     }
     .progressbar__svg-circle {
         stroke-width: 3;

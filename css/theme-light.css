@@ -1,17 +1,16 @@
 /*body {background-color: rgba(200, 185, 144,0.8);}*/
-body {background-color: rgba(240,255,240,0.5);}
-/*.header {background-color: #3c3c3c}*/
-.header {background-color: rgba(200, 185, 144,1);
-}
+body {background-color: rgba(133, 162, 199, 0.3)}
+/*.header {background-color: rgba(200, 185, 144,1);*/
+.header {background-color: rgba(255, 255, 255, 1)}
 .mail,.phone,.telegram {color: white}
 .name {color: black;}
 .about a {color: black;}
 .header-menu a {color: black}
-.header-menu a:hover {color: rgba(255,255,255,0.7);}
+.header-menu a:hover {color: rgba(217,77,201,0.7);}
 .paragraph-title {color: rgba(217,77,201,1);}
 .title {
     color: black;
-    background: rgba(190, 190, 190, 0.5);
+    background: rgba(191, 191,191, 0.4);
 }
 .university-title {background: rgba(195, 195, 195, 0.2);}
 
@@ -62,16 +61,18 @@ body {background-color: rgba(240,255,240,0.5);}
 .footer {background-color: rgba(200, 185, 144,1)}
 .progress-bg {background: rgba(233, 233, 233, 0.5);}
 
-.circular-progress:before {background-image: url("../img/link.png");
-    background-color: rgba(240,255,240,1);}
+/*.circular-progress:before {*/
+/*    background-image: url("../img/link.png");*/
+/*    background-color: rgba(240,255,240,1);*/
+/*}*/
 .circle-inner::before {
     background-image: url("../img/link.png");
     background-size: 85% 85%;
 }
 .circle {
-    border: 9px rgba(0,0,0,1) double;
+    /*border: 1px rgba(0,0,0,1) solid;*/
 }
-
+.text {color: black}
 @media (max-width: 480px) {
     /*.header-menu {background-color: gray;}*/
     .footer {background-color: rgba(200, 185, 144,1)}

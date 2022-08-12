@@ -11,7 +11,7 @@
 }
 .circle {
     margin: 5em;
-    /*border: 9px rgba(0,0,0,1) double;*/
+    /*background: #2d3239;*/
     border-radius: 50%;
     position: relative;
     width: 6em;
@@ -36,10 +36,10 @@
 .circle-inner::before {
     content: '';
     /*background: linear-gradient(120deg,#201c21,#2f343a);*/
-    background-repeat: no-repeat;
     background-color: transparent;
-    /*background-image: url("../img/link.png");*/
+    background-size: 100% 100%;
     background-position: center;
+    background-repeat: no-repeat;
     /*box-shadow: 0 0 0.2em 0.2em rgba(0, 0, 0, 0.3);*/
     /*box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.7);*/
     border-radius: inherit;
@@ -52,18 +52,14 @@
     z-index: -3;
 }
 .text {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     z-index: 10;
     width: 150px;
-    padding-top: 100%;
+    padding-top: 80%;
 }
 .text a {text-decoration: none;}
 .circle svg {
@@ -79,30 +75,16 @@
 .pragress {
     fill: none;
     stroke: #1cff3e;
-    stroke-width: 8;
+    stroke-width: 3;
     stroke-linejoin: round;
     stroke-linecap: round;
     stroke-dasharray: 630;
     stroke-dashoffset: 630;
-    transition: 4s ease-in-out;
+    transition: 2s ease-in-out;
 }
 
-.circle:nth-child(2) .pragress {
-    stroke: #ffb71c;
-}
-.circle:nth-child(3) .pragress {
-    stroke: rgba(255, 43, 28,0.8);
-}
-.circle:nth-child(4) .pragress {
-    stroke: rgba(255, 43, 28,0.8);
-}
-.shadow-1 {
-    /*filter: drop-shadow(2px 0 5px #1db51a);*/
-}
-.shadow-2 {
-    /*filter: drop-shadow(2px 0 5px #7c1616);*/
-}
-.shadow-3 {
-    /*filter: drop-shadow(2px 0 5px #ffb71c);*/
-}
+.circle:nth-child(2) .pragress {stroke: #ffb71c;}
+.circle:nth-child(3) .pragress {stroke: rgba(255, 43, 28,0.8);}
+.circle:nth-child(4) .pragress {stroke: rgba(255, 43, 28,0.8);}
+
 

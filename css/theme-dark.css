@@ -3,10 +3,11 @@ html,body {background-color: black;}
 .name {color: white;}
 .about a {color: white;}
 .header-menu a {color: floralwhite}
-.header-menu a:hover {color: rgba(217,77,201,0.7);}
+.header-menu a:hover {color: rgba(217,77,201,1);}
 .title {
-    color: antiquewhite;
-    background: rgba(150,150,150,0.1);
+    /*color: antiquewhite;*/
+    color: white;
+    background: rgba(150,150,150,0.3);
 }
 .university-title {background: rgba(195, 195, 195, 0.1);}
 
@@ -62,11 +63,12 @@ html,body {background-color: black;}
     background-size: 85% 85%;
 }
 .circle {
-    border: 9px rgb(255, 255, 255) double;
+    /*border: 2px rgba(255,255,255,1) solid;*/
 }
 .job-skill-title {
     color: white;
 }
+.text {color: white}
 @media (max-width: 850px) {
     .job-title {background-color: rgba(0,0,0,0)}
 }
