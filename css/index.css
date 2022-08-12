@@ -457,7 +457,7 @@ progress {font-size: 20px}
     text-align: center;
     align-items: center;
     text-transform: uppercase;
-    border-radius: 10px 0 50px 50px;
+    border-radius: 0 0 50px 50px;
 }
 .university-1 {
     list-style: none;
