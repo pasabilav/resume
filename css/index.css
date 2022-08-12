@@ -840,7 +840,7 @@ progress {
         position: relative;flex-direction: column;
     }
     #gitbox {
-        height: 300px;
+        max-height: 50%;
         overflow: scroll;
     }
     .title {
