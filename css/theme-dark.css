@@ -44,7 +44,7 @@ html,body {background-color: black;}
 .job-admin {background-image: url("../img/work_admin_dark.png");}
 .job-support {background-image: url("../img/work_support_dark.png");}
 .job-sales {background-image: url("../img/work_sales_dark.png");}
-.exp-html {background-image: url("../img/exp_html_dark.png")}
+.exp-html {background-image: url("../img/exp_html.png")}
 .exp-css {background-image: url("../img/exp_css.png")}
 .exp-js {background-image: url("../img/exp_js.png")}
 .university-pic {background-image: url("../img/univer_dark.png")}
@@ -78,7 +78,7 @@ html,body {background-color: black;}
     .job-title {background-color: rgba(0,0,0,0)}
     .footer {background-color: rgba(128, 128, 128, 0.6);
         backdrop-filter: blur(2px);
-        border-radius: 30px 30px 10px 10px}
+        }
     .header {
         backdrop-filter: blur(4px);
         background-color: rgba(128, 128, 128, 0.8);
@@ -92,7 +92,10 @@ html,body {background-color: black;}
     .soft-list-title {
         background-color: rgba(128, 128, 128,0.2);
     }
+    .text {
+        color: white;
+    }
 }
-@media (max-width: 390px) {
+@media (max-width: 370px) {
 
 }

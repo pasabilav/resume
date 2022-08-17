@@ -75,6 +75,9 @@ body {background-color: white
     /*border: 1px rgba(0,0,0,1) solid;*/
 }
 .text {color: black}
+.university {
+    background-color: rgba(128,128,128,0.07);
+}
 @media (max-width: 850px) {
     /*.header-menu {background-color: gray;}*/
     .footer {

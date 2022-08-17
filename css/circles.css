@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
-
 @font-face {font-family: 'Darker Grotesque', sans-serif;}
-
+.circly {height: 100%;}
+.round {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1% 0 3% 0;
+}
 .circles {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* position: relative; */
+    /*align-items: baseline;*/
+    /* justify-content: center; */
+    /* overflow: hidden; */
+    gap: 5px;
+    /* margin: 0 auto; */
+    height: 135px;
+    /*width: 100%;*/
 }
-
 .circle {
-    margin: 1% 5% 5%;
-    /* background: #2d3239; */
-    border-radius: 50%;
+    /*margin: 1% 0 3%;*/
     position: relative;
     width: 100%;
     height: 100px;
 }
-.circly {
-    height: 100%;
-}
+
 .circle-inner {
     background: transparent;
     border-radius: inherit;
@@ -67,15 +74,18 @@
     transition: 1s ease-out;
 }
 .text a {text-decoration: none;}
-.circle svg {
-    position: absolute;
-    height: 250px;
-    width: 250px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.svg {
+    /*width: 100%;*/
+    height: 100%;
 }
-
+.circle svg {
+    /*position: absolute;*/
+    /*height: 250px;*/
+    /*width: 250px;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+}
 .track {fill: none;}
 .pragress {
     fill: none;
@@ -95,15 +105,33 @@
 
 @media (max-width: 850px) {
     .circles {
-        flex-direction: column;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        /* overflow: auto; */
+        align-items: center;
+        height: 155px;
+        gap: 35px;
     }
     .circle {
-        width: 100%;
+        /*width: 100%;*/
         margin: 2% 0 5%;
     }
     .text {
         display: flex;
+        position: relative;
         justify-content: center;
         letter-spacing: 12px;
+        font-weight: 100;
+        opacity: 1;
     }
+}
+@media (max-width: 370px) {
+    .text {
+        margin: 75% auto 2%;
+        letter-spacing: 15px;
+    }
+    .circle {
+        margin: 2% auto 5%;
+    }
+
 }
