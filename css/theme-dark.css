@@ -29,7 +29,7 @@ html,body {background-color: black;}
 .skill-block {color: white;}
 .soft-list,.data-list {color: white;}
 .skill-text {color: gray}
-.skill-title {color: white}
+.skill-title {color: antiquewhite}
 .change-theme[data-theme='dark']{display: none;}
 .change-theme[data-theme='light'] {display: block;}
 .change-theme {background-image: url("../img/dark.png");}
@@ -68,7 +68,8 @@ html,body {background-color: black;}
 .job-skill-title {
     color: white;
 }
-.text {color: white}
+.text {color: antiquewhite}
+.soft-list-title {color: antiquewhite}
 @media (max-width: 850px) {
     #span-gs,#span-adobe,#span-office {
         color: rgba(128,128,128,0.6);

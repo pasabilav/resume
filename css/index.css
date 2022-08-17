@@ -162,6 +162,7 @@ html,body {height: 100%}
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 1%;
+    z-index: 5;
     /*border-radius: 5px 5px 30px 30px;*/
 }
 .title span {font-weight: 600;}
@@ -251,10 +252,12 @@ html,body {height: 100%}
 }
 
 .skill-inbox {
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     align-items: baseline;
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .progress-box {
     margin: 1% 0 0;
@@ -281,7 +284,7 @@ progress {font-size: 20px}
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: rgba(128,128,128,0.1);
+    /*background-color: rgba(128,128,128,0.1);*/
     border-radius: 25px;
 }
 .job-title {
@@ -392,7 +395,7 @@ progress {font-size: 20px}
     font-family: 'Yanone',sans-serif;
     font-size: 18px;
     width: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 .soft-list {
     list-style: none;
@@ -596,38 +599,27 @@ progress {font-size: 20px}
     width: 100%;
     height: 100%;
 }
-.progressbar__svg-circle-html {
+.progressbar__svg-circles {
     width: 100%;
     height: 100%;
     fill: none;
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
     stroke-width: 7;
-    stroke: rgba(154, 250, 118,0.8);
+    /*stroke: #1cff3e;*/
     stroke-linecap: round;
-    transform: translate(5px, 5px);
+    transform: translate(0, 5px);
+    transition: 5s ease-in-out;
+    opacity: 0.8;
 }
-.progressbar__svg-circle-js {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    stroke-width: 7;
+.html {
+    stroke: #1cff3e;
+}
+.js {
     stroke: rgba(239, 122, 43,0.8);
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
 }
-.progressbar__svg-circle-css {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    stroke-width: 7;
+.css {
     stroke: rgba(137, 219, 106, 0.8);
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
 }
 .progressbar__text {
     position: absolute;
@@ -655,41 +647,42 @@ progress {font-size: 20px}
 /*    transform: translate(-50%, -50%) rotate(0deg);*/
 /*}*/
 
-.shadow-html {filter: drop-shadow(1px 0 5px #66e063)}
-.shadow-css {filter: drop-shadow(2px 0 5px #1db51a)}
+.shadow-html {filter: drop-shadow(1px 3px 5px #31ff2d)}
+.shadow-css {filter: drop-shadow(1px 3px 5px #1db51a)}
 .shadow-js {filter: drop-shadow(1px 5px 5px #7c1616)}
-.shadow-work {filter: drop-shadow(2px 0 5px #1db51a)}
+.shadow-work {filter: drop-shadow(1px 5px 5px #1db51a)}
 
 .circle-js {
     -webkit-animation: anim_circle-js 2s ease-in-out forwards;
     animation: anim_circle-js 2s ease-in-out forwards;
 }
 .circle-css {
-    -webkit-animation: anim_circle-css 2s ease-in-out forwards;
-    animation: anim_circle-css 2s ease-in-out forwards;
+    /*-webkit-animation: anim_circle-css 2s ease-in-out forwards;*/
+    /*animation: anim_circle-css 2s ease-in-out forwards;*/
+    animation: anim_circle-css 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
 }
 .circle-html {
-    -webkit-animation: anim_circle-html 2s ease-in-out forwards;
-    animation: anim_circle-html 2s ease-in-out forwards;
+    -webkit-animation: anim_circle-html 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
+    animation: anim_circle-html 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
 }
 .circle-work {
-    -webkit-animation: anim_circle-work 2s ease-in-out forwards;
-    animation: anim_circle-work 2s ease-in-out forwards;
+    -webkit-animation: anim_circle-work 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
+    animation: anim_circle-work 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
 }
 .circle-work-1 {
-    -webkit-animation: anim_circle-work 2s ease-in-out forwards;
-    animation: anim_circle-work 2s ease-in-out forwards;
+    -webkit-animation: anim_circle-work 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
+    animation: anim_circle-work 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
 }
 .circle-work-2 {
-    -webkit-animation: anim_circle-work 2s ease-in-out forwards;
-    animation: anim_circle-work 2s ease-in-out forwards;
+    -webkit-animation: anim_circle-work 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
+    animation: anim_circle-work 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
 }
 
 .meter-work-1 {
-    -webkit-animation: anim_meter-work-1 2s ease-in-out forwards;
-    animation: anim_meter-work-1 2s ease-in-out forwards;
+    -webkit-animation: anim_meter-work-1 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
+    animation: anim_meter-work-1 2s cubic-bezier(0.46,-0.01, 0.48, 0.93) forwards;
 }
-.shadow-work-1 {filter: drop-shadow(2px 0 5px #1db51a)}
+.shadow-work-1 {filter: drop-shadow(1px 2px 5px #1db51a)}
 .shadow-work-2 {filter: drop-shadow(1px 2px 5px #31b813)}
 .shadow-work-3 {filter: drop-shadow(1px 2px 5px #b50101)}
 .shadow-work-4 {filter: drop-shadow(1px 2px 5px #ffb71c)}
@@ -848,6 +841,12 @@ progress {
     font-weight: bold;
     letter-spacing: 5px;
 }
+.soft-list::-webkit-scrollbar{
+    width: 0;}
+.block::-webkit-scrollbar{
+    width: 0;}
+.data-list::-webkit-scrollbar{
+    width: 0;}
 @media (max-width: 850px) {
     body {
         overflow-x: hidden;
@@ -934,6 +933,9 @@ progress {
     }
     .soft-list::-webkit-scrollbar{
         width: 0;}
+    .data-list::-webkit-scrollbar{
+        width: 0;}
+
     .work {
         margin: 0 0 1%;
         line-height: 60px;
